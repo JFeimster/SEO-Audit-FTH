@@ -1,13 +1,13 @@
 # Full SEO Audit Report: fthustler.wordpress.com
-        2 **Site:** Full-Time Hustler — "From Side-Hustle to Full-Time Success"
-        3 **Author:** Jason Feimster
-        4 **Platform:** WordPress.com (hosted, Automattic infrastructure)
-        5 **Audit Date:** March 28, 2026
-        6 **Auditor:** Claude Code SEO Audit Suite (7 specialist agents)
-        7
-        8 ---
-        9
-       10 ## Executive Summary
+**Site:** Full-Time Hustler — "From Side-Hustle to Full-Time Success"
+**Author:** Jason Feimster
+**Platform:** WordPress.com (hosted, Automattic infrastructure)
+**Audit Date:** March 28, 2026
+**Auditor:** Claude Code SEO Audit Suite (7 specialist agents)
+
+---
+
+## Executive Summary
        11
        12 | Metric | Score |
        13 |--------|-------|
