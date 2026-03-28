@@ -1,0 +1,26 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jason Feimster",
+  "url": "https://fthustler.wordpress.com/author/fthustler/",
+  "image": "https://github.com/user-attachments/assets/5d3ad8b3-9752-4f45-bf18-8c734a98f7ce",
+  "jobTitle": "Entrepreneur and Content Creator",
+  "description": "Entrepreneur and blogger covering side hustles, AI tools, business strategy, and personal finance at Full-Time Hustler.",
+  "knowsAbout": [
+    "Entrepreneurship",
+    "Artificial Intelligence",
+    "Side Hustles",
+    "Personal Finance",
+    "No-Code Tools",
+    "Vibe Coding",
+    "Business Funding",
+    "Real Estate Investing"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/jason-vc/",
+    "https://twitter.com/FT_Hustler",
+    "https://www.youtube.com/c/jasonfeimster",
+    "https://www.instagram.com/ft_hustler/",
+    "https://www.facebook.com/FTHustling/"
+  ]
+}
