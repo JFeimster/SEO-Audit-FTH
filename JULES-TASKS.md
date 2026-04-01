@@ -48,15 +48,29 @@ The tasks are ordered by priority (Critical, High, Medium, Low) to ensure the mo
   @jules Please execute task H6 from the ACTION-PLAN.md: Update the Open Graph image to a minimum of 1200x630px. Add a non-empty `og:image:alt` tag and ensure Twitter Card meta tags are added to the homepage.
   ```
 
-- [ ] **H7. Build a Proper Author / About Page**
+- [x] **H7. Build a Proper Author / About Page**
   ```text
   @jules Please execute task H7 from the ACTION-PLAN.md: Build a proper "About Jason Feimster" page with credentials, years in entrepreneurship, specific outcomes, LinkedIn link, and media mentions. Link this page from every post's byline and ensure the bio grammatical error is fixed.
   ```
 
 - [ ] **H8. Expand Thin Content Posts**
-  ```text
-  @jules Please execute task H8 from the ACTION-PLAN.md: Expand the thin content posts ("Vibe Coding Is Here", "Boring Apps, Real Money", "90-Day Bootstrapped Hustle Plan", "EmpireValuation") to reach the target word counts and add the specific sections outlined in the action plan. We can do this one post at a time if you prefer.
-  ```
+  *(See `content/thin-content-expansion-list.md` for detailed action items per post)*
+  - [ ] **H8a. Expand "Vibe Coding Is Here"**
+    ```text
+    @jules Please execute task H8a: Expand the "Vibe Coding Is Here" post based on the action items in `content/thin-content-expansion-list.md`.
+    ```
+  - [ ] **H8b. Expand "Boring Apps, Real Money"**
+    ```text
+    @jules Please execute task H8b: Expand the "Boring Apps, Real Money" post based on the action items in `content/thin-content-expansion-list.md`.
+    ```
+  - [ ] **H8c. Expand "90-Day Bootstrapped Hustle Plan"**
+    ```text
+    @jules Please execute task H8c: Expand the "90-Day Bootstrapped Hustle Plan" post based on the action items in `content/thin-content-expansion-list.md`.
+    ```
+  - [ ] **H8d. Expand "EmpireValuation"**
+    ```text
+    @jules Please execute task H8d: Expand the "EmpireValuation" post based on the action items in `content/thin-content-expansion-list.md`.
+    ```
 
 ## MEDIUM — Fix Within 30 Days
 

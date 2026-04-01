@@ -8,9 +8,13 @@
 - [x] **H4** — Fix 404 Unicode-slug URL in sitemap
 - [x] **H5** — Fix Google Search Console sitemap submission
 - [ ] **H6** — Update OG image to 1200×630px + add Twitter Card tags
-- [ ] **H7** — Build proper About/Author page with credentials
+- [x] **H7** — Build proper About/Author page with credentials
 - [ ] **H8** — Expand thin content posts (Vibe Coding, Boring Apps, 90-Day Plan, EmpireValuation)
-- [x] **M1** — Add BlogPosting + WebSite JSON-LD to all posts/homepage
+  - [ ] **H8a** — Expand "Vibe Coding Is Here"
+  - [ ] **H8b** — Expand "Boring Apps, Real Money"
+  - [ ] **H8c** — Expand "90-Day Bootstrapped Hustle Plan"
+  - [ ] **H8d** — Expand "EmpireValuation"
+- [ ] **M1** — Add BlogPosting + WebSite JSON-LD to all posts/homepage
 - [ ] **M2** — Add FAQ sections (3–5 Q&As) to every post
 - [ ] **M3** — Create `llms.txt` at root URL
 - [ ] **M4** — Add 3–5 contextual internal links per post
