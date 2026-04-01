@@ -152,11 +152,14 @@
           ore comprehensive competitors.
       136
       137 **Posts to expand (priority order):**
-138 *See `content/thin-content-expansion-list.md` for the full compiled checklist of action items for each post.*
-139 1. **"Vibe Coding Is Here"** (~700–900 words → target 1,800+): Add practical vibe coding tool comparison (Cursor, Replit, Lovable), a step-by-step starter tutorial, and Karpathy's original quote linked to source.
-140 2. **"Boring Apps, Real Money"** (~950–1,100 words → target 1,800+): Add a worked case study of a real app rebuilt with this strategy, real App Store revenue data with sources (Sensor Tower, data.ai).
-141 3. **"90-Day Bootstrapped Hustle Plan"** (~850–1,000 words → target 1,500+): Replace the generic phase framework with actual numbers from the author's own experience. If the title says "my plan," the content must deliver personal specifics.
-142 4. **"EmpireValuation"** (~850–1,000 words → target 1,500+): Add source citation for the 30–45x multiple claim (Flippa, Empire Flippers published data). Expand tool walkthrough with screenshots.
+      138 1. **"Vibe Coding Is Here"** (~700–900 words → target 1,800+): Add practical vibe coding tool comparison (Cursor, Replit, Lova
+          ble), a step-by-step starter tutorial, and Karpathy's original quote linked to source.
+      139 2. **"Boring Apps, Real Money"** (~950–1,100 words → target 1,800+): Add a worked case study of a real app rebuilt with this s
+          trategy, real App Store revenue data with sources (Sensor Tower, data.ai).
+      140 3. **"90-Day Bootstrapped Hustle Plan"** (~850–1,000 words → target 1,500+): Replace the generic phase framework with actual n
+          umbers from the author's own experience. If the title says "my plan," the content must deliver personal specifics.
+      141 4. **"EmpireValuation"** (~850–1,000 words → target 1,500+): Add source citation for the 30–45x multiple claim (Flippa, Empire
+           Flippers published data). Expand tool walkthrough with screenshots.
       142
       143 ---
       144
