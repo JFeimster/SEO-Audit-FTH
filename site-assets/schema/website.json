@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Full-Time Hustler",
+  "url": "https://fthustler.wordpress.com",
+  "description": "From Side-Hustle to Full-Time Success — covering entrepreneurship, AI tools, side hustles, and finance.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://fthustler.wordpress.com/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}

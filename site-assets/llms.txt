@@ -1,0 +1,24 @@
+# Full-Time Hustler
+
+> From Side-Hustle to Full-Time Success. Practical guide for entrepreneurs,
+> indie hackers, and solopreneurs building businesses with AI and bootstrapped capital.
+
+## Author
+
+Jason Feimster — entrepreneur, content creator, and AI tools practitioner.
+LinkedIn: https://www.linkedin.com/in/jason-vc/
+YouTube: https://www.youtube.com/c/jasonfeimster
+
+## Content Focus
+
+- AI tools for entrepreneurs and solopreneurs
+- Side hustle to full-time business strategy
+- Business funding, loans, and capital for startups
+- No-code and vibe coding for non-technical founders
+- Real estate investing and personal finance
+
+## Key Articles
+
+- https://fthustler.wordpress.com/2026/03/26/claude-can-now-control-your-entire-computer/
+- https://fthustler.wordpress.com/2026/01/27/boring-apps-real-money/
+- https://fthustler.wordpress.com/2025/05/12/vibe-coding/
