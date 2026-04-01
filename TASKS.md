@@ -10,7 +10,7 @@
 - [ ] **H6** — Update OG image to 1200×630px + add Twitter Card tags
 - [ ] **H7** — Build proper About/Author page with credentials
 - [ ] **H8** — Expand thin content posts (Vibe Coding, Boring Apps, 90-Day Plan, EmpireValuation)
-- [ ] **M1** — Add BlogPosting + WebSite JSON-LD to all posts/homepage
+- [x] **M1** — Add BlogPosting + WebSite JSON-LD to all posts/homepage
 - [ ] **M2** — Add FAQ sections (3–5 Q&As) to every post
 - [ ] **M3** — Create `llms.txt` at root URL
 - [ ] **M4** — Add 3–5 contextual internal links per post
