@@ -35,7 +35,11 @@ The tasks are ordered by priority (Critical, High, Medium, Low) to ensure the mo
 
 - [x] **H4. Fix the 404 Unicode Slug in Sitemap**
   ```text
-  @jules Please execute task H4 from the ACTION-PLAN.md: Identify the post with the 404 Unicode slug (%f0%9d%99%8f), clean its ASCII slug or permanently delete it if necessary, and then regenerate the sitemap.
+  @jules Please execute task H4 from the ACTION-PLAN.md: Identify the post
+  with the 404 Unicode slug (%f0%9d%99%8f), clean its ASCII slug or permanently
+  delete it if necessary, and then regenerate the sitemap.
+  with the 404 Unicode slug (%f0%9d%99%8f), clean its ASCII slug or permanently
+  delete it if necessary, and then regenerate the sitemap.
   ```
 
 - [ ] **H5. Fix Google Search Console Sitemap Submission**
