@@ -425,8 +425,8 @@
       386 - [ ] **H1** — Add alt text to all images (Media Library + inline edit)
       387 - [ ] **H2** — Write custom meta descriptions (homepage + all posts)
       388 - [ ] **H3** — Shorten all post title tags to under 60 chars
-      389 - [ ] **H4** — Fix 404 Unicode-slug URL in sitemap
-      390 - [ ] **H5** — Fix Google Search Console sitemap submission
+      389 - [x] **H4** — Fix 404 Unicode-slug URL in sitemap
+      390 - [x] **H5** — Fix Google Search Console sitemap submission
       391 - [ ] **H6** — Update OG image to 1200×630px + add Twitter Card tags
       392 - [ ] **H7** — Build proper About/Author page with credentials
       393 - [ ] **H8** — Expand thin content posts (Vibe Coding, Boring Apps, 90-Day Plan, EmpireValuation)
@@ -434,7 +434,7 @@
       395 - [ ] **M2** — Add FAQ sections (3–5 Q&As) to every post
       396 - [ ] **M3** — Create `llms.txt` at root URL
       397 - [ ] **M4** — Add 3–5 contextual internal links per post
-      398 - [ ] **M5** — Fix stale 2022-02-04 lastmod dates in sitemap
+      398 - [x] **M5** — Fix stale 2022-02-04 lastmod dates in sitemap
       399 - [ ] **M6** — Add H2 heading structure to Vibe Coding post
       400 - [ ] **M7** — Add hyperlinked citations to all named claims and statistics
       401 - [ ] **M8** — Write 300–400 word editorial block on homepage
