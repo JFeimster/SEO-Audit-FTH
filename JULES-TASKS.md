@@ -48,7 +48,7 @@ The tasks are ordered by priority (Critical, High, Medium, Low) to ensure the mo
   @jules Please execute task H6 from the ACTION-PLAN.md: Update the Open Graph image to a minimum of 1200x630px. Add a non-empty `og:image:alt` tag and ensure Twitter Card meta tags are added to the homepage.
   ```
 
-- [ ] **H7. Build a Proper Author / About Page**
+- [x] **H7. Build a Proper Author / About Page**
   ```text
   @jules Please execute task H7 from the ACTION-PLAN.md: Build a proper "About Jason Feimster" page with credentials, years in entrepreneurship, specific outcomes, LinkedIn link, and media mentions. Link this page from every post's byline and ensure the bio grammatical error is fixed.
   ```
