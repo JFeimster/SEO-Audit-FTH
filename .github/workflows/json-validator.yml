@@ -1,0 +1,22 @@
+name: JSON Validator
+
+on:
+  push:
+    paths:
+      - '**.json'
+  pull_request:
+    paths:
+      - '**.json'
+  workflow_dispatch:
+
+jobs:
+  json-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Run JSON Lint
+        run: |
+          npm install -g jsonlint
+          find . -name "*.json" -type f -not -path "*/node_modules/*" -exec jsonlint -q {} +
