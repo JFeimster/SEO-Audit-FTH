@@ -43,7 +43,7 @@ The tasks are ordered by priority (Critical, High, Medium, Low) to ensure the mo
   @jules Please execute task H5 from the ACTION-PLAN.md: Provide instructions on how I can update the Google Search Console sitemap submission (removing `/sitemap_index.xml` and adding `/sitemap.xml` and `/news-sitemap.xml`), or perform it if you have access to the necessary configuration.
   ```
 
-- [ ] **H6. Update OG Image to Minimum 1200×630px**
+- [x] **H6. Update OG Image to Minimum 1200×630px**
   ```text
   @jules Please execute task H6 from the ACTION-PLAN.md: Update the Open Graph image to a minimum of 1200x630px. Add a non-empty `og:image:alt` tag and ensure Twitter Card meta tags are added to the homepage.
   ```

@@ -424,7 +424,7 @@
       388 - [ ] **H3** — Shorten all post title tags to under 60 chars
       389 - [x] **H4** — Fix 404 Unicode-slug URL in sitemap
       390 - [x] **H5** — Fix Google Search Console sitemap submission
-      391 - [ ] **H6** — Update OG image to 1200×630px + add Twitter Card tags
+      391 - [x] **H6** — Update OG image to 1200×630px + add Twitter Card tags
       392 - [ ] **H7** — Build proper About/Author page with credentials
       393 - [ ] **H8** — Expand thin content posts (Vibe Coding, Boring Apps, 90-Day Plan, EmpireValuation)
       394 - [ ] **M1** — Add BlogPosting + WebSite JSON-LD to all posts/homepage

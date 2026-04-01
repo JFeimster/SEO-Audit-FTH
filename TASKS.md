@@ -7,7 +7,7 @@
 - [ ] **H3** — Shorten all post title tags to under 60 chars
 - [x] **H4** — Fix 404 Unicode-slug URL in sitemap
 - [x] **H5** — Fix Google Search Console sitemap submission
-- [ ] **H6** — Update OG image to 1200×630px + add Twitter Card tags
+- [x] **H6** — Update OG image to 1200×630px + add Twitter Card tags
 - [x] **H7** — Build proper About/Author page with credentials
 - [ ] **H8** — Expand thin content posts (Vibe Coding, Boring Apps, 90-Day Plan, EmpireValuation)
   - [ ] **H8a** — Expand "Vibe Coding Is Here"
