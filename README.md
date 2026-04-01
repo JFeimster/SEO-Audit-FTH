@@ -1,5 +1,7 @@
 # Full-Time Hustler SEO Audit & Implementation Plan
 
+> SEO Audit findings, structured data templates, and a prioritized action plan for improving search visibility and compliance for the Full-Time Hustler website.
+
 Welcome to the SEO Audit and Action Plan repository for **[Full-Time Hustler](https://fthustler.wordpress.com/)**.
 
 ## Overview
