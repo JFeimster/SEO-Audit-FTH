@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # Ensure gh cli is installed and authenticated
 if ! command -v gh &> /dev/null
