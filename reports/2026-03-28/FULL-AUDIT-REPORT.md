@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD013 -->
         1 # Full SEO Audit Report: fthustler.wordpress.com
         2 **Site:** Full-Time Hustler — "From Side-Hustle to Full-Time Success"
         3 **Author:** Jason Feimster
@@ -20,32 +21,45 @@
        20 | AI Search Readiness (GEO) | 42 / 100 |
        21 | Images | 30 / 100 |
        22
-       23 **Business Type Detected:** Entrepreneurial blog / personal brand — single author (Jason Feimster), covering side hustles, AI
-          tools, business finance, startup strategy, and personal development. Monetized via affiliate sidebar placements (business lend
-          ing: David Allen Capital, ROK Financial, GoKapital, Fund&Grow) and custom GPT tool promotion.
+23 **Business Type Detected:** Entrepreneurial blog / personal brand — single
+author (Jason Feimster), covering side hustles, AI
+tools, business finance, startup strategy, and personal development. Monetized
+via affiliate sidebar placements (business lend
+ing: David Allen Capital, ROK Financial, GoKapital, Fund&Grow) and custom GPT
+tool promotion.
        24
        25 ---
        26
        27 ### Top 5 Critical Issues
        28
-       29 1. **No affiliate/FTC disclosure on any post** — multiple commercial affiliate links embedded in every page with zero disclosu
+29 1. **No affiliate/FTC disclosure on any post** — multiple commercial
+affiliate links embedded in every page with zero disclosu
           re language. Highest-priority legal and trust risk.
-       30 2. **Zero meaningful structured data (Schema.org)** — no Article, BlogPosting, Person, Organization, or WebSite JSON-LD on any
+30 2. **Zero meaningful structured data (Schema.org)** — no Article,
+BlogPosting, Person, Organization, or WebSite JSON-LD on any
            page. Suppresses rich results eligibility and AI citation chances.
-       31 3. **All post title tags truncated in SERPs** — all 4 sampled posts exceed 60 chars. Every post is showing truncated titles in
+31 3. **All post title tags truncated in SERPs** — all 4 sampled posts exceed 60
+chars. Every post is showing truncated titles in
            Google.
-       32 4. **Empty `alt=""` on virtually all content images** — 11/17 homepage images, 6/7 post images. Zero SEO value extracted from
+32 4. **Empty `alt=""` on virtually all content images** — 11/17 homepage
+images, 6/7 post images. Zero SEO value extracted from
           editorial imagery.
-       33 5. **No llms.txt + no cited sources in content** — site covers AI-heavy topics but earns zero citations from ChatGPT, Perplexi
+33 5. **No llms.txt + no cited sources in content** — site covers AI-heavy
+topics but earns zero citations from ChatGPT, Perplexi
           ty, or Google AI Overviews due to absent GEO infrastructure.
        34
        35 ### Top 5 Quick Wins
        36
-       37 1. **Add affiliate disclosure** to every post (10 minutes per post — legal requirement, trust signal).
-       38 2. **Write custom meta descriptions** (150–160 chars) for the homepage and all posts using Jetpack SEO.
-       39 3. **Add `alt` text to all images** via the WordPress block editor — no technical changes needed.
-       40 4. **Create `llms.txt`** at the root URL — a 30-minute task that immediately signals the site to AI citation engines.
-       41 5. **Add FAQ sections** to posts — 3–5 Q&A blocks at the end of each article, the single fastest path to AI Overview and Perpl
+37 1. **Add affiliate disclosure** to every post (10 minutes per post — legal
+requirement, trust signal).
+38 2. **Write custom meta descriptions** (150–160 chars) for the homepage and
+all posts using Jetpack SEO.
+39 3. **Add `alt` text to all images** via the WordPress block editor — no
+technical changes needed.
+40 4. **Create `llms.txt`** at the root URL — a 30-minute task that immediately
+signals the site to AI citation engines.
+41 5. **Add FAQ sections** to posts — 3–5 Q&A blocks at the end of each article,
+the single fastest path to AI Overview and Perpl
           exity citation slots.
        42
        43 ---
@@ -56,10 +70,11 @@
        48
        49 ### 1.1 Crawlability — PASS (with caveats)
        50
-       51 - `robots.txt` is present, valid, and correctly disallows only admin routes.
+51 - `robots.txt` is present, valid, and correctly disallows only admin routes.
        52 - All content pages are open to crawling.
        53 - No `noindex` directives found — content is indexable.
-       54 - No AI crawler rules (GPTBot, ClaudeBot, PerplexityBot) — all implicitly allowed. Add explicit rules if training-data scrapin
+54 - No AI crawler rules (GPTBot, ClaudeBot, PerplexityBot) — all implicitly
+allowed. Add explicit rules if training-data scrapin
           g is a concern.
        55
        56 ### 1.2 Indexability — FAIL
@@ -68,14 +83,18 @@
        59 |-------|----------|
        60 | **No canonical tag on the homepage** | Critical |
        61 | `sitemap_index.xml` returns soft 404 | High |
-       62 | 187 sitemap URLs carry stale `2022-02-04` lastmod date (bulk import artifact) | Medium |
-       63 | One 404 URL in sitemap (Unicode math-font characters in slug) | High |
+62 | 187 sitemap URLs carry stale `2022-02-04` lastmod date (bulk import
+artifact) | Medium |
+63 | One 404 URL in sitemap (Unicode math-font characters in slug) | High |
        64 | No `rel="next"` `<link>` tag for paginated archives | Medium |
        65
-       66 The homepage lacks a canonical tag — confirmed absent. Individual post pages correctly declare canonicals. The missing homepag
-          e canonical creates duplicate content risk across shortlinks (`wp.me`), pagination variants, and query strings.
+66 The homepage lacks a canonical tag — confirmed absent. Individual post pages
+correctly declare canonicals. The missing homepag
+e canonical creates duplicate content risk across shortlinks (`wp.me`),
+pagination variants, and query strings.
        67
-       68 The `sitemap_index.xml` endpoint returns a 404. If registered in Google Search Console, it silently delivers nothing. The vali
+68 The `sitemap_index.xml` endpoint returns a 404. If registered in Google
+Search Console, it silently delivers nothing. The vali
           d sitemap is at `/sitemap.xml` (680 URLs) and `/news-sitemap.xml`.
        69
        70 ### 1.3 HTTPS & Security — PARTIAL PASS
@@ -90,20 +109,25 @@
        79 | X-Content-Type-Options | MISSING |
        80 | Referrer-Policy | MISSING |
        81
-       82 Security headers are a platform-level limitation of WordPress.com — cannot be set without migrating to self-hosted WordPress.
+82 Security headers are a platform-level limitation of WordPress.com — cannot be
+set without migrating to self-hosted WordPress.
        83
        84 ### 1.4 Mobile & Viewport
        85
-       86 - Viewport meta tag correctly declared: `width=device-width, initial-scale=1`.
-       87 - Apostrophe 2 theme is responsive. Responsive `srcset` used on post images.
+86 - Viewport meta tag correctly declared: `width=device-width,
+initial-scale=1`.
+87 - Apostrophe 2 theme is responsive. Responsive `srcset` used on post images.
        88 - **PASS**.
        89
        90 ### 1.5 URL Structure
        91
-       92 - Date-based permalinks (`/YYYY/MM/DD/slug/`). Functional but makes evergreen content appear dated.
+92 - Date-based permalinks (`/YYYY/MM/DD/slug/`). Functional but makes evergreen
+content appear dated.
        93 - Slug quality is good on the date-independent portion.
-       94 - **Do not change retroactively** — would break all URLs without a full 301 redirect plan.
-       95 - One URL in the sitemap uses Unicode math-font characters as the slug — confirmed 404. Must be removed from sitemap and repub
+94 - **Do not change retroactively** — would break all URLs without a full 301
+redirect plan.
+95 - One URL in the sitemap uses Unicode math-font characters as the slug —
+confirmed 404. Must be removed from sitemap and repub
           lished with ASCII slug.
        96
        97 ### 1.6 Social Metadata — FAIL
@@ -115,8 +139,10 @@
       103 | `og:image:alt` | FAIL — empty string |
       104 | Twitter Card meta tags on homepage | MISSING entirely |
       105
-      106 The homepage OG image is 200×200px — Facebook, LinkedIn, and X (Twitter) require 1200×630px minimum for proper link previews.
-          Posts may have individual OG images set but the homepage social share appearance is severely degraded.
+106 The homepage OG image is 200×200px — Facebook, LinkedIn, and X (Twitter)
+require 1200×630px minimum for proper link previews.
+Posts may have individual OG images set but the homepage social share appearance
+is severely degraded.
       107
       108 ---
       109
@@ -134,26 +160,35 @@
       121
       122 ### 2.1 Affiliate/FTC Disclosure — CRITICAL FAIL
       123
-      124 Every audited page contains sidebar affiliate placements (David Allen Capital, ROK Financial, GoKapital, Fund&Grow, ROCKFI) pl
-          us in-body affiliate links (ChatGPT GPT referrals, bit.ly shortened affiliate URLs, affiliate enrollment links with tracking p
-          arameters like `sponsorid=102585504`). **Zero posts have any affiliate disclosure language.**
+124 Every audited page contains sidebar affiliate placements (David Allen
+Capital, ROK Financial, GoKapital, Fund&Grow, ROCKFI) pl
+us in-body affiliate links (ChatGPT GPT referrals, bit.ly shortened affiliate
+URLs, affiliate enrollment links with tracking p
+arameters like `sponsorid=102585504`). **Zero posts have any affiliate
+disclosure language.**
       125
-      126 FTC Endorsement Guides and Google's paid-link policies both require clear, conspicuous disclosure at the point of recommendati
-          on. This is a legal exposure and a direct Trustworthiness E-E-A-T failure. Fix immediately.
+126 FTC Endorsement Guides and Google's paid-link policies both require clear,
+conspicuous disclosure at the point of recommendati
+on. This is a legal exposure and a direct Trustworthiness E-E-A-T failure. Fix
+immediately.
       127
-      128 **Template disclosure:** *"This post contains affiliate links. If you click through and make a purchase, Full-Time Hustler may
+128 **Template disclosure:** *"This post contains affiliate links. If you click
+through and make a purchase, Full-Time Hustler may
            earn a commission at no additional cost to you."*
       129
       130 ### 2.2 Author Credentialing — FAIL
       131
       132 - Jason Feimster is consistently bylined — positive.
-      133 - The sitewide author bio is a single sentence with a grammatical error ("On a mission **is** to help visionary entrepreneurs"
+133 - The sitewide author bio is a single sentence with a grammatical error ("On
+a mission **is** to help visionary entrepreneurs"
            → "On a mission **to** help").
-      134 - No author credentials, years of experience, track record, companies founded, or verifiable outcomes stated anywhere.
+134 - No author credentials, years of experience, track record, companies
+founded, or verifiable outcomes stated anywhere.
       135 - No on-page author bio box on any individual post.
       136 - LinkedIn is linked in the header — the one positive trust signal.
-      137 - For YMYL-adjacent topics (business finance, AI tools affecting work outcomes), the absence of author credentialing is a mean
-          ingful ranking risk under the September 2025 Quality Rater Guidelines.
+137 - For YMYL-adjacent topics (business finance, AI tools affecting work
+outcomes), the absence of author credentialing is a mean
+ingful ranking risk under the September 2025 Quality Rater Guidelines.
       138
       139 ### 2.3 Thin Content
       140
@@ -168,27 +203,36 @@
       149 | 90-Day Bootstrapped Plan | ~850–1,000 words | FAIL — thin |
       150 | EmpireValuation | ~850–1,000 words | FAIL — thin |
       151
-      152 Posts with thin content also show a characteristic pattern of over-structuring (8–12 H2 headings with very little content bene
+152 Posts with thin content also show a characteristic pattern of
+over-structuring (8–12 H2 headings with very little content bene
           ath each) consistent with AI-assisted drafting.
       153
       154 ### 2.4 Source Citations — FAIL
       155
       156 - Zero posts contain hyperlinked external citations.
-      157 - Named attributions exist (Andrej Karpathy, Greg Eisenberg, Kyle Balmer) but none link to source material.
-      158 - Financial claims ("30–45x multiples," "$10M apps") are asserted without any sourcing.
-      159 - Google's Quality Rater Guidelines explicitly call for verifiable sources on empirical claims in business and finance content
+157 - Named attributions exist (Andrej Karpathy, Greg Eisenberg, Kyle Balmer)
+but none link to source material.
+158 - Financial claims ("30–45x multiples," "$10M apps") are asserted without
+any sourcing.
+159 - Google's Quality Rater Guidelines explicitly call for verifiable sources
+on empirical claims in business and finance content
           .
       160
       161 ### 2.5 Internal Linking — FAIL (editorial)
       162
-      163 - 109–136 "internal links" per post — but almost entirely navigation menu duplication.
-      164 - Zero contextual body links observed pointing from one post to related posts.
-      165 - No topic cluster architecture visible. Content exists as isolated pages rather than an interconnected authority network.
+163 - 109–136 "internal links" per post — but almost entirely navigation menu
+duplication.
+164 - Zero contextual body links observed pointing from one post to related
+posts.
+165 - No topic cluster architecture visible. Content exists as isolated pages
+rather than an interconnected authority network.
       166
       167 ### 2.6 Homepage Content — FAIL
       168
-      169 Homepage body content is approximately 310 words — below the 500-word threshold. The homepage is a blog roll with no editorial
-           mission statement, no "who this is for" content, and no trust-building copy — while simultaneously displaying six affiliate f
+169 Homepage body content is approximately 310 words — below the 500-word
+threshold. The homepage is a blog roll with no editorial
+mission statement, no "who this is for" content, and no trust-building copy —
+while simultaneously displaying six affiliate f
           inance widgets.
       170
       171 ---
@@ -207,41 +251,55 @@
       184 | GPT Prompts | 82 chars | FAIL — truncated in SERPs |
       185 | Vibe Coding | 79 chars | FAIL — truncated in SERPs |
       186
-      187 The brand suffix " – Full-Time Hustler" consumes 20 characters, leaving only ~40 characters for the actual keyword. Consider d
-          ropping the brand suffix on interior pages or writing separate SEO titles using Jetpack SEO.
+187 The brand suffix " – Full-Time Hustler" consumes 20 characters, leaving only
+~40 characters for the actual keyword. Consider d
+ropping the brand suffix on interior pages or writing separate SEO titles using
+Jetpack SEO.
       188
       189 ### 3.2 Meta Descriptions
       190
       191 | Page | Status |
       192 |------|--------|
       193 | Homepage | FAIL — 38 chars, just the tagline |
-      194 | Post 1 (Claude) | FAIL — auto-generated, 360+ chars, truncated mid-sentence |
-      195 | Post 2 (Boring Apps) | FAIL — auto-generated, 360+ chars, truncated mid-sentence |
+194 | Post 1 (Claude) | FAIL — auto-generated, 360+ chars, truncated
+mid-sentence |
+195 | Post 2 (Boring Apps) | FAIL — auto-generated, 360+ chars, truncated
+mid-sentence |
       196 | Post 3 (GPT Prompts) | PASS (borderline 160 chars) |
       197 | Post 4 (Vibe Coding) | PASS (borderline 159 chars) |
       198
-      199 WordPress is auto-generating descriptions from post excerpts on 2 of 4 posts and the homepage. These appear in SERPs as incomp
+199 WordPress is auto-generating descriptions from post excerpts on 2 of 4 posts
+and the homepage. These appear in SERPs as incomp
           lete sentences ending with "…".
       200
       201 ### 3.3 Heading Hierarchy
       202
-      203 - **Dual H1 problem**: The Apostrophe 2 theme renders the site name "Full-Time Hustler" as an `<h1>` in the site header on eve
-          ry page, competing with the post entry title `<h1>`. Google is lenient about multiple H1s but the generic site name taking the
+203 - **Dual H1 problem**: The Apostrophe 2 theme renders the site name
+"Full-Time Hustler" as an `<h1>` in the site header on eve
+ry page, competing with the post entry title `<h1>`. Google is lenient about
+multiple H1s but the generic site name taking the
            first H1 position is suboptimal.
-      204 - Post 4 (Vibe Coding) has no H2/H3 structure in the body — flat wall of text.
-      205 - Post 3 (GPT Prompts) uses emoji characters in H2/H3 tags — dilutes keyword signal.
+204 - Post 4 (Vibe Coding) has no H2/H3 structure in the body — flat wall of
+text.
+205 - Post 3 (GPT Prompts) uses emoji characters in H2/H3 tags — dilutes keyword
+signal.
       206
       207 ### 3.4 Affiliate Link Compliance
       208
-      209 Affiliate and commercial links throughout the site are missing `rel="nofollow sponsored"` attributes. Google's link spam polic
-          ies require this for paid/affiliate links. The `cs4000.me` enrollment link (with `sponsorid=102585504` parameter) has `rel="no
-          referrer noopener"` but not the required `nofollow sponsored`. Untagged affiliate links risk manual spam penalties.
+209 Affiliate and commercial links throughout the site are missing
+`rel="nofollow sponsored"` attributes. Google's link spam polic
+ies require this for paid/affiliate links. The `cs4000.me` enrollment link (with
+`sponsorid=102585504` parameter) has `rel="no
+referrer noopener"` but not the required `nofollow sponsored`. Untagged
+affiliate links risk manual spam penalties.
       210
       211 ### 3.5 Sitemap Quality
       212
       213 - 680 URLs indexed in `/sitemap.xml` — healthy.
-      214 - 187 URLs (27.5%) carry stale `2022-02-04` lastmod dates — crawl frequency signal damage.
-      215 - Deprecated `<changefreq>` and `<priority>` tags present — ignored by Google, add file bloat.
+214 - 187 URLs (27.5%) carry stale `2022-02-04` lastmod dates — crawl frequency
+signal damage.
+215 - Deprecated `<changefreq>` and `<priority>` tags present — ignored by
+Google, add file bloat.
       216 - One confirmed 404 URL with Unicode math-font slug in sitemap.
       217 - `sitemap_index.xml` → 404.
       218
@@ -253,13 +311,16 @@
       224
       225 ### Current Implementation
       226
-      227 The **only schema present** across the entire site is an empty, auto-generated Jetpack Microdata block:
+227 The **only schema present** across the entire site is an empty,
+auto-generated Jetpack Microdata block:
       228
       229 ```html
-      230 <div class="jp-carousel-wrap" itemscope itemtype="https://schema.org/ImageGallery">
+230 <div class="jp-carousel-wrap" itemscope
+itemtype="https://schema.org/ImageGallery">
       231 ```
       232
-      233 This block has **zero `itemprop` attributes** — it is a non-functional UI artifact from Jetpack's carousel plugin. Google cann
+233 This block has **zero `itemprop` attributes** — it is a non-functional UI
+artifact from Jetpack's carousel plugin. Google cann
           ot extract any data from it. It provides no SEO value.
       234
       235 **The site has zero author-controlled structured data.**
@@ -269,21 +330,27 @@
       239 | Schema Type | Priority | Google Rich Result? |
       240 |-------------|----------|-------------------|
       241 | BlogPosting / Article (per post) | **Critical** | Yes |
-      242 | WebSite + SearchAction (homepage) | **Critical** | Yes (Sitelinks Search Box) |
+242 | WebSite + SearchAction (homepage) | **Critical** | Yes (Sitelinks Search
+Box) |
       243 | Person (author) | **Critical** | Yes (E-E-A-T signal) |
       244 | Organization (homepage) | **High** | Yes (Knowledge Panel) |
       245 | BreadcrumbList (all posts) | **High** | Yes (SERP breadcrumbs) |
       246 | ItemList (homepage feed) | Recommended | Yes |
-      247 | FAQPage (selected posts) | Optional (GEO benefit) | No (restricted on blogs) |
+247 | FAQPage (selected posts) | Optional (GEO benefit) | No (restricted on
+blogs) |
       248
       249 ### WordPress.com Implementation Path
       250
-      251 WordPress.com free/basic plans do not have access to Yoast SEO or RankMath. Options:
-      252 1. **Manual JSON-LD injection** via Custom HTML block at the top/bottom of each post.
-      253 2. **Business plan upgrade** unlocks plugin installation for automated schema generation.
+251 WordPress.com free/basic plans do not have access to Yoast SEO or RankMath.
+Options:
+252 1. **Manual JSON-LD injection** via Custom HTML block at the top/bottom of
+each post.
+253 2. **Business plan upgrade** unlocks plugin installation for automated
+schema generation.
       254 3. **Jetpack SEO (paid)** may provide some structured data output.
       255
-      256 Sample JSON-LD for BlogPosting, WebSite, Organization, Person, and BreadcrumbList is provided in the Action Plan below.
+256 Sample JSON-LD for BlogPosting, WebSite, Organization, Person, and
+BreadcrumbList is provided in the Action Plan below.
       257
       258 ---
       259
@@ -291,37 +358,43 @@
       261
       262 **Score: 40 / 100**
       263
-      264 Note: Scores are estimated from HTML analysis, not lab/field measurements. Run Google PageSpeed Insights for real CWV data.
+264 Note: Scores are estimated from HTML analysis, not lab/field measurements.
+Run Google PageSpeed Insights for real CWV data.
       265
       266 ### 5.1 LCP (Largest Contentful Paint) — HIGH RISK
       267
       268 | Issue | Severity |
       269 |-------|----------|
-      270 | No `fetchpriority="high"` on first featured image (LCP candidate) | High |
+270 | No `fetchpriority="high"` on first featured image (LCP candidate) | High
+|
       271 | No `<link rel="preload" as="image">` for LCP image | High |
       272 | 5 render-blocking CSS stylesheets in `<head>` | High |
-      273 | Web fonts loaded with no `font-display` declaration (defaults to `block` — FOIT) | High |
-      274 | Font CSS from `fonts-api.wp.com` is synchronous render-blocking | High |
+273 | Web fonts loaded with no `font-display` declaration (defaults to `block` —
+FOIT) | High |
+274 | Font CSS from `fonts-api.wp.com` is synchronous render-blocking | High |
       275 | Only `dns-prefetch` for font origin — no `preconnect` | Medium |
-      276 | Font files served as TTF instead of WOFF2 (~30–50% larger) | Medium |
+276 | Font files served as TTF instead of WOFF2 (~30–50% larger) | Medium |
       277
       278 ### 5.2 INP (Interaction to Next Paint) — MEDIUM RISK
       279
       280 | Issue | Severity |
       281 |-------|----------|
       282 | 14 of 18 external scripts load without `defer` or `async` | High |
-      283 | Raw YouTube `<iframe>` embeds on post pages (~500KB JS on load) | High |
-      284 | Jetpack Instant Search registers event listeners on page load | Medium |
-      285 | `af.pubmine.com` ad network active (dns-prefetch present) | Medium |
-      286 | 8 inline `<script>` blocks in `<head>` execute before render | Medium |
+283 | Raw YouTube `<iframe>` embeds on post pages (~500KB JS on load) | High |
+284 | Jetpack Instant Search registers event listeners on page load | Medium |
+285 | `af.pubmine.com` ad network active (dns-prefetch present) | Medium |
+286 | 8 inline `<script>` blocks in `<head>` execute before render | Medium |
       287
       288 ### 5.3 CLS (Cumulative Layout Shift) — MEDIUM RISK
       289
       290 | Issue | Severity |
       291 |-------|----------|
-      292 | Gravatar author avatar missing `width`/`height` HTML attributes (sitewide) | Medium |
-      293 | FOIT/FOUT from fonts without `font-display: swap` causes text reflow | Medium |
-      294 | Homepage post thumbnail grid has no `srcset` — fixed 450px for all viewports | Medium |
+292 | Gravatar author avatar missing `width`/`height` HTML attributes (sitewide)
+| Medium |
+293 | FOIT/FOUT from fonts without `font-display: swap` causes text reflow |
+Medium |
+294 | Homepage post thumbnail grid has no `srcset` — fixed 450px for all
+viewports | Medium |
       295
       296 ### 5.4 Page Weight
       297
@@ -331,15 +404,18 @@
       301 | Post 1 (Claude) | 276.8 KB |
       302 | Post 2 (Boring Apps) | 231.8 KB |
       303
-      304 Bloat sources: large inline CSS blocks from Jetpack/Gutenberg/custom fonts; Jetpack `data-attachment-id` / `data-orig-file` /
+304 Bloat sources: large inline CSS blocks from Jetpack/Gutenberg/custom fonts;
+Jetpack `data-attachment-id` / `data-orig-file` /
           `data-image-meta` attributes on every `<img>` tag.
       305
       306 ### 5.5 Positive Platform Signals
       307
-      308 - WordPress.com a8c CDN confirmed active with cache HITs on all pages.
-      309 - PNG/JPEG automatically converted to WebP at CDN edge for supporting browsers.
+308 - WordPress.com a8c CDN confirmed active with cache HITs on all pages.
+309 - PNG/JPEG automatically converted to WebP at CDN edge for supporting
+browsers.
       310 - Static JS/CSS concatenated and minified via `/_static/` endpoint.
-      311 - Content is server-side rendered — Google does not need to execute JS to index content.
+311 - Content is server-side rendered — Google does not need to execute JS to
+index content.
       312
       313 ---
       314
@@ -363,22 +439,27 @@
       332
       333 ### 6.2 Formats — PASS (CDN mitigated)
       334
-      335 - Source uploads are PNG/JPEG. The a8c CDN automatically serves WebP for browsers declaring `Accept: image/webp`. This is tran
+335 - Source uploads are PNG/JPEG. The a8c CDN automatically serves WebP for
+browsers declaring `Accept: image/webp`. This is tran
           sparent and works correctly.
       336 - No AVIF support at CDN level. Minor opportunity.
-      337 - TTF fonts (not WOFF2) — font loading issue, covered in Performance section.
+337 - TTF fonts (not WOFF2) — font loading issue, covered in Performance
+section.
       338
       339 ### 6.3 Responsive Images — PARTIAL
       340
-      341 - Post body images: correctly use `srcset` with multiple widths and `sizes` attributes — PASS.
-      342 - **Homepage thumbnail grid (12 images): no `srcset`** — fixed 450×450px served to all screen sizes. Mobile visitors receive t
+341 - Post body images: correctly use `srcset` with multiple widths and `sizes`
+attributes — PASS.
+342 - **Homepage thumbnail grid (12 images): no `srcset`** — fixed 450×450px
+served to all screen sizes. Mobile visitors receive t
           he same file as 4K desktop users.
       343 - Logo: adequate `srcset` with 2 sizes.
       344
       345 ### 6.4 CLS-Risk Images
       346
-      347 - Gravatar author avatar: no `width`/`height` HTML attributes on any page — shifts content on load.
-      348 - All other main content images have correct width/height declarations.
+347 - Gravatar author avatar: no `width`/`height` HTML attributes on any page —
+shifts content on load.
+348 - All other main content images have correct width/height declarations.
       349
       350 ---
       351
@@ -395,25 +476,33 @@
       362
       363 ### 7.1 Technical AI Accessibility
       364
-      365 - `llms.txt`: **ABSENT** (404). This single file tells compliant AI systems who runs the site, what it covers, and how to cite
+365 - `llms.txt`: **ABSENT** (404). This single file tells compliant AI systems
+who runs the site, what it covers, and how to cite
            it. Without it, AI systems infer all context from raw HTML.
       366 - robots.txt: All AI crawlers implicitly allowed. No selective rules.
-      367 - Server-side rendering: Positive — content accessible without JS execution.
-      368 - **Subdomain problem**: Site lives at `fthustler.wordpress.com`, not a custom domain. Domain authority accrues to `wordpress.
-          com`, not to "Full-Time Hustler" as a distinct web entity. Materially weakens AI citation brand recognition.
+367 - Server-side rendering: Positive — content accessible without JS
+execution.
+368 - **Subdomain problem**: Site lives at `fthustler.wordpress.com`, not a
+custom domain. Domain authority accrues to `wordpress.
+com`, not to "Full-Time Hustler" as a distinct web entity. Materially weakens AI
+citation brand recognition.
       369
       370 ### 7.2 Citability — FAIL
       371
-      372 - **Zero posts contain cited external statistics.** All claims are asserted without attribution links.
-      373 - Post introductions open with narrative hooks/rhetorical devices — AI systems extract the first 40–60 words as the candidate
+372 - **Zero posts contain cited external statistics.** All claims are asserted
+without attribution links.
+373 - Post introductions open with narrative hooks/rhetorical devices — AI
+systems extract the first 40–60 words as the candidate
           answer passage. Current openers produce tone, not citable facts.
       374 - No TL;DR or summary blocks for AI snippet extraction.
-      375 - No FAQ sections with structured Q&A (highest single-tactic GEO win).
+375 - No FAQ sections with structured Q&A (highest single-tactic GEO win).
       376
-      377 **Best-performing post for citability:** "Boring Apps, Real Money" (52/100) — has clear thesis, extractable concept definition
+377 **Best-performing post for citability:** "Boring Apps, Real Money" (52/100)
+— has clear thesis, extractable concept definition
           s, and actionable numbered steps.
       378
-      379 **Worst-performing:** "Claude Computer Use" (30/100) — opens with a metaphor, cites secondary source without linking, no stati
+379 **Worst-performing:** "Claude Computer Use" (30/100) — opens with a
+metaphor, cites secondary source without linking, no stati
           stics.
       380
       381 ### 7.3 Authority & Brand Signals
@@ -431,13 +520,17 @@
       393 | Media/press mentions | Unconfirmed |
       394 | Gravatar profile | Present (last updated 5 years ago) |
       395
-      396 Wikipedia absence is a high-impact gap. Wikipedia presence correlates strongly with AI citation inclusion. Path: secure 3+ ind
-          ependent notable third-party mentions in publications, then create a Wikipedia stub.
+396 Wikipedia absence is a high-impact gap. Wikipedia presence correlates
+strongly with AI citation inclusion. Path: secure 3+ ind
+ependent notable third-party mentions in publications, then create a Wikipedia
+stub.
       397
       398 ### 7.4 Coined Terminology
       399
-      400 The site consistently uses: "Venture Autonomy," "Capital Stacking," "Full-Time Hustler." Coined terminology is a legitimate GE
-          O strategy for owning AI answer real estate. Currently these terms exist only within the site's own corpus — they need externa
+400 The site consistently uses: "Venture Autonomy," "Capital Stacking,"
+"Full-Time Hustler." Coined terminology is a legitimate GE
+O strategy for owning AI answer real estate. Currently these terms exist only
+within the site's own corpus — they need externa
           l adoption to gain AI signal value.
       401
       402 ---
@@ -459,16 +552,20 @@
       418
       419 ## Platform Limitation Note
       420
-      421 Several findings in this report are constrained by the **WordPress.com managed hosting environment**. The following cannot be
-          fixed without either upgrading to a higher WordPress.com plan or migrating to self-hosted WordPress.org:
+421 Several findings in this report are constrained by the **WordPress.com
+managed hosting environment**. The following cannot be
+fixed without either upgrading to a higher WordPress.com plan or migrating to
+self-hosted WordPress.org:
       422
       423 - Security headers (CSP, X-Frame-Options, X-Content-Type-Options)
       424 - Plugin ecosystem access (Yoast SEO, Rank Math, Schema Pro)
       425 - Full `robots.txt` customization
       426 - Server-level font `font-display` control
-      427 - Advanced Core Web Vitals optimization (script deferral, preload injection)
+427 - Advanced Core Web Vitals optimization (script deferral, preload
+injection)
       428
-      429 A **WordPress.com Business plan** ($25/mo) unlocks plugins. A migration to a self-hosted stack (Kinsta, WP Engine, Cloudways)
+429 A **WordPress.com Business plan** ($25/mo) unlocks plugins. A migration to a
+self-hosted stack (Kinsta, WP Engine, Cloudways)
           provides full control but requires technical migration effort.
       430
       431 ---
