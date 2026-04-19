@@ -15,6 +15,8 @@ gh issue create \
   --title "[H8a] Expand Thin Content: Vibe Coding Is Here" \
   --body "Expand the 'Vibe Coding Is Here' post based on the action items in \`content/thin-content-expansion-list.md\`.
 
+**URL to Expand:** https://fthustler.wordpress.com/2025/05/12/vibe-coding/
+
 **Action Items:**
 - [ ] Add practical vibe coding tool comparison (Cursor, Replit, Lovable).
 - [ ] Create a step-by-step starter tutorial.
@@ -34,6 +36,8 @@ gh issue create \
 gh issue create \
   --title "[H8b] Expand Thin Content: Boring Apps, Real Money" \
   --body "Expand the 'Boring Apps, Real Money' post based on the action items in \`content/thin-content-expansion-list.md\`.
+
+**URL to Expand:** https://fthustler.wordpress.com/2026/01/27/boring-apps-real-money/
 
 **Action Items:**
 - [ ] Add a worked case study of a real app rebuilt with this strategy.
@@ -55,6 +59,8 @@ gh issue create \
   --title "[H8c] Expand Thin Content: 90-Day Bootstrapped Hustle Plan" \
   --body "Expand the '90-Day Bootstrapped Hustle Plan' post based on the action items in \`content/thin-content-expansion-list.md\`.
 
+**URL to Expand:** https://fthustler.wordpress.com/90-day-bootstrapped-plan/
+
 **Action Items:**
 - [ ] Replace the generic phase framework with actual numbers from the author's own experience. Provide personal specifics as suggested by the title 'my plan.'
 - [ ] Add 3–5 contextual in-body links to related content.
@@ -71,6 +77,8 @@ gh issue create \
 gh issue create \
   --title "[H8d] Expand Thin Content: EmpireValuation" \
   --body "Expand the 'EmpireValuation' post based on the action items in \`content/thin-content-expansion-list.md\`.
+
+**URL to Expand:** https://fthustler.wordpress.com/empirevaluation/
 
 **Action Items:**
 - [ ] Add a source citation for the 30–45x multiple claim (e.g., Flippa, Empire Flippers published data).

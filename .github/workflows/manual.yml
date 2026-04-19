@@ -1,0 +1,27 @@
+# This workflow runs manually and can be used to trigger arbitrary tasks or checks.
+name: Manual workflow
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+    inputs:
+      target:
+        description: 'Target to run action against'
+        required: false
+        default: 'all'
+
+jobs:
+  manual_task:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Echo inputs
+        run: echo "Running manual action with target ${{ github.event.inputs.target }}"
+
+      - name: Run dummy task
+        run: |
+          echo "This is a simple manual task."
+          echo "You can add any shell scripts, Node scripts, Python scripts, etc. here."
